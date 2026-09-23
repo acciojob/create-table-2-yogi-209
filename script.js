@@ -11,10 +11,11 @@ function createTable()
 	const rn=parseInt(rowInput,10)
 	const cn=parseInt(colsInput,10)
 	if(isNaN(rn)||isNaN(cn)){
-		return 
+		return;
 	}
 	if(rn<=0 ||cn<=0){
 	alert("Please enter the positive number greater than 0");
+		return;
 	}
 	table.innerHtml="";
 	for(let i=0;i<rn;i++)
